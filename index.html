@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Personal Website</title>
+    <title>Manav Khatiwada</title>
     <style>
         /* Reset and base styles */
         * {
@@ -125,7 +125,7 @@
 
         <!-- Text message under the image -->
         <div class="text-message">
-            <p>Hello This my name is Manav and this website is under construction , will try to finish this quickly</p>
+            <p>Hello ! My name is Manav and this website is under construction , will try to finish this quickly</p>
         </div>
 
         <!-- Footer with social links -->
@@ -144,7 +144,35 @@
                     <img src="leeetcode-removebg-preview.png" alt="LeetCode">
                 </a>
             </div>
+            <form id="contact-form">
+
+                <div class="Contact Me">
+                    <p>Want to reach out , drop a message</p>
+                </div>
+
+                <input type="text" name="user_name" placeholder="Name">
+                <input type="email" name="user_email" placeholder="Email">
+                <input type="message" name ="message" placeholder="Message">
+                <button type="submit">Send</button>
+            </form>
+
+            <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2.6.4/dist/email.min.js"></script>
+            <script>
+            emailjs.init("q8e2htBHEWD1i_vOI");
+
+            document.getElementById("contact-form").addEventListener("submit", function(e) {
+                e.preventDefault();
+
+                emailjs.sendForm("service_jnnjvxp", "template_l86zbx8", this)
+                .then(() => alert("Email sent!"))
+                .catch(err => alert("Error: " + JSON.stringify(err)));
+            });
+            </script>
+
+
+
             <p style="margin-top: 10px; font-size: 0.9em;">&copy; 2025 Manav Khatiwada. All rights reserved.</p>
+            
         </footer>
     </div>
 </body>
