@@ -23,6 +23,37 @@ body {
     min-height: 100vh;
 }
 
+.Introduction {
+    text-align: center;
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 30px 20px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+}
+
+.Introduction h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    color: #222;
+}
+
+.Introduction h3 {
+    font-size: 1.3em;
+    font-weight: normal;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.Introduction .intro-text {
+    font-size: 1.05em;
+    line-height: 1.7;
+    color: #666;
+}
+
+
+
 /* Image container - rectangular box */
 .image-box {
     width: 100%;
