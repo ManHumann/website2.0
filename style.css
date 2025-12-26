@@ -138,3 +138,113 @@ footer {
         font-size: 0.95em;
     }
 }
+
+/* New styles: hero, projects, interests */
+html {
+    scroll-behavior: smooth;
+}
+
+.hero {
+    width: 100%;
+    background: #ffffff;
+    padding: 40px 20px;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+    text-align: center;
+    margin-bottom: 28px;
+}
+
+.profile-img {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto 16px;
+    overflow: hidden;
+    border-radius: 50%;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+.profile-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.hero h1 {
+    margin-bottom: 8px;
+    font-size: 2rem;
+    color: #111;
+}
+
+.hero .bio {
+    max-width: 800px;
+    margin: 0 auto;
+    color: #555;
+    font-size: 1.05rem;
+}
+
+#projects {
+    width: 100%;
+    margin: 20px 0 30px;
+}
+
+#projects h2, #interests h2 {
+    margin-bottom: 14px;
+    color: #222;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 18px;
+}
+
+.project-card {
+    background: #fff;
+    padding: 18px;
+    border-radius: 10px;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.06);
+}
+
+.project-card h3 {
+    margin-bottom: 8px;
+}
+
+.project-card p {
+    color: #555;
+    margin-bottom: 12px;
+}
+
+.project-card .cta {
+    display: inline-block;
+    padding: 8px 12px;
+    background: #1976d2;
+    color: #fff;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+.interests {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.interests-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 14px;
+}
+
+.interests-list li {
+    background: #fff;
+    padding: 10px 14px;
+    border-radius: 999px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.04);
+    color: #333;
+}
+
+@media (max-width: 480px) {
+    .profile-img { width: 140px; height: 140px; }
+    .hero { padding: 24px 12px; }
+}

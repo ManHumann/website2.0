@@ -10,16 +10,49 @@
 </head>
 <body>
     <div class="container">
-        <!-- Main image in rectangular box -->
-
-        <div class="Introduction">
+        <!-- Hero: centered photo with bio -->
+        <section id="hero" class="hero">
+            <div class="profile-img">
+                <img src="dororo.jpg" alt="Manav Khatiwada">
+            </div>
             <h1>Manav Khatiwada</h1>
-            <h3>Welcome to my personal website!</h3>
-            <p class="intro-text">
-            Here I present all the work I have done, completed or to be completed.
-            Some ended midway, but either way I am learning something.
-            </p>
-        </div>
+            <p class="bio intro-text">I build things, learn constantly, and share projects here. I work on web different stuffs ,exploring ideas, shipping small projects, and documenting what I learn.</p>
+        </section>
+
+        <!-- Projects section -->
+        <section id="projects" class="projects">
+            <h2>Projects</h2>
+            <div class="projects-grid">
+                <article class="project-card">
+                    <h3>Youtube-Video-Downloader</h3>
+                    <p>Simple script to turn youtube videos into downloadable .wav file format. Mostly used for storing songs in portable devices.</p>
+                    <a href="https://github.com/ManHumann/Youtube_to_WAV_downloader" class="cta">View</a>
+                </article>
+
+                <article class="project-card">
+                    <h3>Maze Generator and Solver</h3>
+                    <p>This project implements a maze generator and solver using recursive backtracking for maze creation and breadth-first search for solving.</p>
+                    <a href="https://github.com/ManHumann/Maze_generator-solver" class="cta">View</a>
+                </article>
+
+                <article class="project-card">
+                    <h3>FaceBook Reels Scraper</h3>
+                    <p>Stores URL and the title of the reel in a csv file ,used for extracting data for creating lipreading dataset.</p>
+                    <a href="https://github.com/ManHumann/facebook_reel_scraper" class="cta">View</a>
+                </article>
+            </div>
+        </section>
+
+        <!-- Interests & Hobbies -->
+        <section id="interests" class="interests">
+            <h2>Interests & Hobbies</h2>
+            <ul class="interests-list">
+                <li>Football</li>
+                <li>Latest Tech</li>
+                <li>Data Handling</li>
+                <li>Motercycle Riding</li>
+            </ul>
+        </section>
 
 
         <!-- Footer with social links -->
